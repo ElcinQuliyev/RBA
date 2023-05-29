@@ -34,3 +34,7 @@ li {
 .fon2 {
   padding-left: 10px;
 }
+.iconfont {
+  display: flex;
+  gap: 12px;
+}
