@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
 }
 a {
   text-decoration: none;
@@ -12,19 +13,19 @@ a {
 li {
   list-style: none;
 }
-
+.head-top {
+  background: #3ad4d8;
+}
 .container {
   max-width: 1140px;
   width: 100%;
   margin: 0px auto;
 }
+
 .row {
-  width: 100%;
-  height: 40px;
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  background: #3ad4d8;
 }
 
 .fon {
@@ -37,4 +38,97 @@ li {
 .iconfont {
   display: flex;
   gap: 12px;
+}
+/* Container2 */
+
+.bgcontainer2 {
+  background: #d9d9d9;
+  width: 100%;
+  padding: 16px;
+}
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lid-flex {
+  display: flex;
+  justify-content: center;
+  gap: 37px;
+}
+li {
+  font-size: 14px;
+  font-weight: 700;
+}
+.icond-flex {
+  display: flex;
+  gap: 13px;
+}
+.bgborder {
+  padding: 12px 14px;
+  border-radius: 25px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+}
+/* Section1 */
+.section1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+/* Sectio1 Left And Right design */
+.left {
+  background: #3ad4d8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.titleh1 {
+  font-size: 46px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: capitalize;
+  white-space: pre-line;
+}
+.titleh4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.btn {
+  width: 167px;
+  border: 0px;
+  color: #d9d9d9;
+  height: 50px;
+  background: #543ee9;
+  border-radius: 30px;
+}
+.imgwidth {
+  width: 350px;
+  height: 250px;
+}
+.imgwidth > img {
+  width: 100%;
+}
+/* Section2 Left And Right Design */
+.section2 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.right2 {
+  background: #3ad4d8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 10%;
+}
+.titleh3 {
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: capitalize;
+  white-space: pre-line;
 }
