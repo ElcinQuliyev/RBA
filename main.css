@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 a {
   text-decoration: none;
@@ -17,7 +17,7 @@ li {
   background: #3ad4d8;
 }
 .container {
-  max-width: 1140px;
+  max-width: 1320px;
   width: 100%;
   margin: 0px auto;
 }
@@ -76,14 +76,16 @@ li {
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  gap: 156px;
 }
 /* Sectio1 Left And Right design */
 .left {
   background: #3ad4d8;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  max-width: 556px;
 }
+
 .titleh1 {
   font-size: 46px;
   font-weight: 700;
@@ -116,19 +118,236 @@ li {
   margin-top: 100px;
   display: flex;
   justify-content: center;
+  gap: 140px;
 }
+
 .right2 {
   background: #3ad4d8;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
-  padding-left: 10%;
+  gap: 30px;
 }
+
 .titleh3 {
   font-size: 30px;
   font-weight: 700;
   font-style: normal;
   text-transform: capitalize;
-  white-space: pre-line;
+}
+/* Section3 Design */
+.section3 {
+  margin-top: 100px;
+}
+.divheder {
+  text-align: center;
+  align-items: center;
+}
+/* Div Carts D-flex */
+.divcarts {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  gap: 20px;
+}
+.cart1 {
+  width: 315px;
+  background: #ffffff;
+  padding: 9px;
+  box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+  position: relative;
+}
+.hourname {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #fe5538;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 28px;
+}
+.ellipsis {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  background: #3ad4d8;
+}
+.titleh5 {
+  font-size: 16px;
+  line-height: 35px;
+  font-weight: 600;
+  word-break: break-all;
+  text-overflow: clip;
+}
+.btnmany {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btnsec3 {
+  width: 147px;
+  height: 40px;
+  border: 1px solid #353535;
+  border-radius: 30px;
+}
+
+/* Sual verilecek..? */
+.btnmany > p {
+  color: #3ad4d8;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 75px;
+}
+.aydesign {
+  font-size: 12px;
+  padding: 2px;
+}
+/* Position Love  */
+.positlove {
+  width: 46px;
+  height: 44px;
+  top: 18px;
+  right: 12px;
+  position: absolute;
+}
+/* Cart(2) */
+.cart2 {
+  width: 315px;
+  height: fit-content;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+  position: relative;
+}
+.cartimg2 > img {
+  width: 100%;
+}
+.center {
+  padding: 20px;
+}
+.changebg {
+  border: 0;
+  background-color: #543ee9;
+  color: #ffffff;
+}
+.bgchange > p {
+  color: #543ee9;
+}
+.divcenterAll {
+  display: block;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+  border: 0px;
+}
+/* Section(4) Design */
+.section4 {
+  display: flex;
+  padding-top: 120px;
+  justify-content: center;
+  gap: 50px;
+}
+.left4 {
+  max-width: 556px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.h5color {
+  line-height: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #543ee9;
+}
+.changebtn {
+  border: 0;
+  width: 188px;
+  height: 50px;
+  color: #ffffff;
+  background: #543ee9;
+  border-radius: 30px;
+}
+/* Section(5) Design */
+.section5 {
+  padding-top: 120px;
+}
+.divheder {
+  text-align: center;
+  align-items: center;
+}
+/* Cart(1) */
+.divcart1sec5 {
+  width: 399px;
+  background: #ffffff;
+  padding: 80px 25px;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+}
+.h4sec5 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 50px;
+  color: #fe5538;
+}
+/* Cart(2) */
+.divcart2sec5 {
+  width: 399px;
+  background-image: url(./img/Rectangle\ 10.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.positText {
+  bottom: 18px;
+  left: 25px;
+  position: absolute;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.2);
+}
+.h4cartsec5 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 50px;
+  color: #3ad4d8;
+}
+/* Cart(3) */
+.divcart3sec5 {
+  width: 399px;
+  background-image: url(./img/Rectangle\ 11.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.h4cart2sec5 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 50px;
+  color: #d6a7f9;
+}
+/* Section(6) Design */
+.section6 {
+  padding-top: 178px;
+}
+.divheder {
+  text-align: center;
+  align-items: center;
+}
+.titleh5sec6 {
+  word-break: break-all;
+  text-overflow: clip;
+  font-family: "Futurica";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+/* -- */
+.btnmany > p {
+  color: #3ad4d8;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 75px;
 }
