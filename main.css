@@ -13,6 +13,8 @@ a {
 li {
   list-style: none;
 }
+/* Back Conteiner IMG see not */
+
 .head-top {
   background: #3ad4d8;
 }
@@ -46,6 +48,7 @@ li {
   width: 100%;
   padding: 16px;
 }
+
 .row2 {
   display: flex;
   justify-content: space-between;
@@ -71,6 +74,7 @@ li {
   background: #ffffff;
   box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
 }
+
 /* Section1 */
 .section1 {
   display: flex;
@@ -143,6 +147,7 @@ li {
   text-align: center;
   align-items: center;
 }
+
 /* Div Carts D-flex */
 .divcarts {
   display: flex;
@@ -150,12 +155,16 @@ li {
   padding-top: 50px;
   gap: 20px;
 }
+
 .cart1 {
   width: 315px;
   background: #ffffff;
   padding: 9px;
   box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
   position: relative;
+}
+.cartimg1 > img {
+  width: 100%;
 }
 .hourname {
   display: flex;
@@ -186,10 +195,14 @@ li {
   align-items: center;
 }
 .btnsec3 {
-  width: 147px;
+  width: 127px;
   height: 40px;
   border: 1px solid #353535;
   border-radius: 30px;
+  cursor: pointer;
+}
+.btnsec3:hover {
+  transform: scale(1.05);
 }
 
 /* Sual verilecek..? */
@@ -223,31 +236,40 @@ li {
   width: 100%;
 }
 .center {
-  padding: 20px;
+  padding: 15px;
 }
 .changebg {
   border: 0;
   background-color: #543ee9;
   color: #ffffff;
+  cursor: pointer;
+}
+.changebg:hover {
+  transform: scale(1.05);
 }
 .bgchange > p {
   color: #543ee9;
 }
 .divcenterAll {
   display: block;
-  margin: 0 auto;
+  margin: 55px auto;
   background: #ffffff;
   box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
   border-radius: 50px;
   width: 150px;
   height: 50px;
   border: 0px;
+  cursor: pointer;
+}
+.divcenterAll:hover {
+  transform: scale(1.2);
 }
 /* Section(4) Design */
 .section4 {
   display: flex;
   padding-top: 120px;
   justify-content: center;
+  align-items: center;
   gap: 50px;
 }
 .left4 {
@@ -255,14 +277,18 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+
+  /* gap: 20px; */
 }
-.h5color {
-  line-height: 20px;
+.h5design {
   font-weight: 600;
   font-size: 15px;
+  line-height: 10px;
+  font-style: normal;
+  margin: 0;
   color: #543ee9;
 }
+
 .changebtn {
   border: 0;
   width: 188px;
@@ -270,6 +296,11 @@ li {
   color: #ffffff;
   background: #543ee9;
   border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.changebtn:hover {
+  transform: scale(1.1);
 }
 /* Section(5) Design */
 .section5 {
@@ -350,4 +381,12 @@ li {
   font-weight: 800;
   font-size: 18px;
   line-height: 75px;
+}
+/* Section(7) */
+.section7 {
+  display: flex;
+  padding-top: 120px;
+  justify-content: center;
+  align-items: center;
+  gap: 85px;
 }
