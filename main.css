@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Futurica:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -385,8 +385,53 @@ li {
 /* Section(7) */
 .section7 {
   display: flex;
-  padding-top: 120px;
+  margin-top: 120px;
   justify-content: center;
   align-items: center;
   gap: 85px;
+}
+/* Section(8) */
+.section8 {
+  margin-top: 150px;
+}
+
+.cart1sec8 {
+  width: 315px;
+  height: auto;
+  background-color: #f7f6f6;
+  box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.25);
+  padding: 16px;
+  position: relative;
+}
+.border50 {
+  padding: 12px;
+}
+
+.border50 > img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.centersec8 {
+  padding: 0px 15px;
+}
+.titleh5sec8 {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 500;
+  word-break: break-all;
+  text-overflow: clip;
+}
+.centersec8 > p {
+  margin-top: 18px;
+}
+/* Cart(2) */
+.cart2sec8 {
+  width: 315px;
+  height: auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+  padding: 16px;
+  position: relative;
 }
