@@ -478,3 +478,45 @@ li {
   width: 45%;
   margin: 30px;
 }
+/* Section(12) */
+.changediv {
+  margin-top: 20px;
+}
+.cart2sec12 {
+  padding: 8px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+}
+.footercenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+.divlogofooter {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.divlogofooter > ul > li > a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.footer {
+  width: 100%;
+  background: #671c7c;
+}
+.footerbootm {
+  display: flex;
+  width: 88%;
+  margin: auto;
+  justify-content: space-between;
+  padding: 40px;
+  color: #ffffff;
+}
