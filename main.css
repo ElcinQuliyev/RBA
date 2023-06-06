@@ -446,7 +446,6 @@ li {
 .titleh5sec9 {
   word-break: break-all;
   text-overflow: clip;
-  font-family: "Futurica";
   font-weight: 400;
   font-size: 25px;
   line-height: 25px;
@@ -458,10 +457,24 @@ li {
   margin-top: 28px;
 }
 .changebtnmany {
-  position: relative;
-  left: 70%;
+  margin-left: 70%;
   margin-top: 50px;
 }
 .changebtnmany > p {
   color: #543ee9;
+}
+/* Section(10) */
+.section10 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 90px;
+  margin: 35px;
+}
+.left3sec10 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%;
+  margin: 30px;
 }
