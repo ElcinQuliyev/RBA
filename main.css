@@ -433,5 +433,35 @@ li {
   background-color: #ffffff;
   box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
   padding: 16px;
+}
+/* Section(9) */
+.cart1sec9 {
+  width: 315px;
+  height: auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+  padding: 10px;
+}
+
+.titleh5sec9 {
+  word-break: break-all;
+  text-overflow: clip;
+  font-family: "Futurica";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+}
+.centersec9 {
+  padding: 20px 10px;
+}
+.centersec9 > p {
+  margin-top: 28px;
+}
+.changebtnmany {
   position: relative;
+  left: 70%;
+  margin-top: 50px;
+}
+.changebtnmany > p {
+  color: #543ee9;
 }
