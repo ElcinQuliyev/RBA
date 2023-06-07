@@ -84,10 +84,10 @@ li {
 }
 /* Sectio1 Left And Right design */
 .left {
-  background: #3ad4d8;
   display: flex;
   flex-direction: column;
   max-width: 556px;
+  gap: 13px;
 }
 
 .titleh1 {
@@ -109,7 +109,12 @@ li {
   height: 50px;
   background: #543ee9;
   border-radius: 30px;
+  cursor: pointer;
 }
+.btn:hover {
+  transform: scale(1.2);
+}
+
 .imgwidth {
   width: 350px;
   height: 250px;
@@ -125,11 +130,70 @@ li {
   gap: 140px;
 }
 
-.right2 {
+.imgwidth2 {
+  width: 350px;
+  height: 250px;
+  position: relative;
+  z-index: 1;
+}
+.imgwidth2 > img {
+  width: 100%;
+}
+.left2 {
+  position: relative;
+}
+/* Div backDesign */
+.backdiv {
+  width: 200px;
+  height: 150px;
+  background: #671c7c;
+  position: absolute;
+  top: -30px;
+  left: 35%;
+  border-radius: 5px;
+  box-shadow: 49px 42px 12px rgba(80, 80, 80, 0.25);
+  transform: rotate(-31.01deg);
+}
+/* backdivBorder */
+.backdivborder {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #671c7c;
+  border-radius: 50px;
+  top: -55px;
+  left: 25%;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+  z-index: 1;
+}
+/* backDiv2 */
+.backdiv2 {
+  width: 200px;
+  height: 150px;
+  position: absolute;
   background: #3ad4d8;
+  bottom: -20px;
+  left: 10%;
+  box-shadow: 30px 4px 27px rgba(82, 82, 82, 0.25);
+  border-radius: 5px;
+  transform: rotate(-37.25deg);
+}
+/* backdivBorder2 */
+.backdivborder2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #fe5538;
+  left: 45px;
+  border-radius: 40px;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+}
+
+.right2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  max-width: 556px;
   gap: 30px;
 }
 
@@ -267,7 +331,7 @@ li {
 /* Section(4) Design */
 .section4 {
   display: flex;
-  padding-top: 120px;
+  padding: 70px;
   justify-content: center;
   align-items: center;
   gap: 50px;
@@ -277,8 +341,55 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  position: relative;
   /* gap: 20px; */
+}
+/* DivCricleSec4 */
+.divCricleSec4 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #fe5538;
+  border-radius: 40px;
+  top: -45px;
+  left: -80px;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+}
+/* DivCricl2Sec4 */
+.divCricle2Sec4 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #3ad4d8;
+  border-radius: 40px;
+  bottom: -20px;
+  right: 140px;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+}
+.right4 {
+  position: relative;
+}
+/* divRightCricleSec4  */
+.divRightCricleSec4 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #671c7c;
+  border-radius: 40px;
+  top: 4px;
+  right: -65px;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+}
+/* divRightCricle2Sec4 */
+.divRightCricle2Sec4 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #d6a7f9;
+  border-radius: 40px;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+  bottom: -2px;
+  right: 50px;
 }
 .h5design {
   font-weight: 600;
@@ -395,6 +506,32 @@ li {
   margin-top: 150px;
 }
 
+.cricleDiv {
+  position: relative;
+}
+/* DivCricle02 */
+.divCricle02 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #3ad4d8;
+  top: -60px;
+  left: 60px;
+  border-radius: 40px;
+  box-shadow: 30px 20px 10px rgba(101, 101, 101, 0.25);
+}
+/* DivCricle01 */
+.divCricle01 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: -55px;
+  right: 150px;
+  border-radius: 40px;
+  background: #d6a7f9;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+}
+
 .cart1sec8 {
   width: 315px;
   height: auto;
@@ -478,6 +615,31 @@ li {
   width: 45%;
   margin: 30px;
 }
+.right3 {
+  position: relative;
+}
+/* divcricle1 */
+.divcircle1 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -70px;
+  right: 90px;
+  border-radius: 40px;
+  background: #fe5538;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+}
+/* divcricle2 */
+.divcircle2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: -60px;
+  left: 130px;
+  border-radius: 40px;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+  background: #3ad4d8;
+}
 /* Section(12) */
 .changediv {
   margin-top: 20px;
@@ -485,7 +647,7 @@ li {
 .cart2sec12 {
   padding: 8px;
 }
-
+/* ------------------- */
 /* Footer */
 .footer {
   width: 100%;
