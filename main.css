@@ -22,6 +22,7 @@ li {
   max-width: 1320px;
   width: 100%;
   margin: 0px auto;
+  padding: 16px;
 }
 
 .row {
@@ -46,7 +47,6 @@ li {
 .bgcontainer2 {
   background: #d9d9d9;
   width: 100%;
-  padding: 16px;
 }
 
 .row2 {
@@ -118,9 +118,91 @@ li {
 .imgwidth {
   width: 350px;
   height: 250px;
+  position: relative;
+  z-index: 1;
 }
 .imgwidth > img {
   width: 100%;
+}
+.right {
+  position: relative;
+}
+.divs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.2;
+  background: #000;
+}
+.imgdiv {
+  top: 120px;
+  left: 180px;
+  position: absolute;
+  opacity: 0.8;
+  z-index: 1;
+}
+/*backdiv1right design  */
+.backdiv1right {
+  position: absolute;
+  width: 260px;
+  height: 420px;
+  top: -60px;
+  right: 50px;
+  box-shadow: 42px 18px 12px rgba(80, 80, 80, 0.25);
+  border-radius: 5px;
+  transform: rotate(22.66deg);
+  background: #671c7c;
+}
+/* backdivtopright design */
+.backdivtopright {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -100px;
+  right: 80px;
+  border-radius: 40px;
+  background: #fe5538;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+}
+/* backdiv2left design */
+.backdiv2left {
+  position: absolute;
+  width: 211px;
+  height: 250px;
+  top: -60px;
+  left: -50px;
+  border-radius: 5px;
+  box-shadow: 30px 4px 27px rgba(82, 82, 82, 0.25);
+  background: #3ad4d8;
+  transform: rotate(-37.25deg);
+}
+/* backdivtopleft design */
+.backdivtopleft {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -90px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+  border-radius: 40px;
+  background: #671c7c;
+}
+/* backdivbotmleft design */
+.backdivbotmleft {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #3ad4d8;
+  z-index: 1;
+  opacity: 0.8;
+  bottom: -4px;
+  left: 90px;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
 }
 /* Section2 Left And Right Design */
 .section2 {
@@ -223,10 +305,29 @@ li {
 .cart1 {
   width: 315px;
   background: #ffffff;
+  position: relative;
+  transition: 0.3s ease;
+}
+.cart1:hover {
   padding: 9px;
   box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
-  position: relative;
 }
+.changebg {
+  border: 0;
+  background-color: #543ee9;
+  color: #ffffff;
+  cursor: pointer;
+}
+.changebg:hover {
+  transform: scale(1.05);
+  background: #f7f6f6;
+  color: #000;
+  border: 1px solid #353535;
+}
+.bgchange > p {
+  color: #543ee9;
+}
+
 .cartimg1 > img {
   width: 100%;
 }
@@ -261,7 +362,6 @@ li {
 .btnsec3 {
   width: 127px;
   height: 40px;
-  border: 1px solid #353535;
   border-radius: 30px;
   cursor: pointer;
 }
@@ -293,8 +393,13 @@ li {
   width: 315px;
   height: fit-content;
   background-color: #ffffff;
-  box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
   position: relative;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.cart2:hover {
+  padding: 9px;
+  box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
 }
 .cartimg2 > img {
   width: 100%;
@@ -302,18 +407,7 @@ li {
 .center {
   padding: 15px;
 }
-.changebg {
-  border: 0;
-  background-color: #543ee9;
-  color: #ffffff;
-  cursor: pointer;
-}
-.changebg:hover {
-  transform: scale(1.05);
-}
-.bgchange > p {
-  color: #543ee9;
-}
+
 .divcenterAll {
   display: block;
   margin: 55px auto;
@@ -423,10 +517,10 @@ li {
 }
 /* Cart(1) */
 .divcart1sec5 {
-  width: 399px;
-  background: #ffffff;
-  padding: 80px 25px;
-  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+  width: 390px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .h4sec5 {
   font-weight: 600;
@@ -436,29 +530,76 @@ li {
 }
 /* Cart(2) */
 .divcart2sec5 {
-  width: 399px;
-  background-image: url(./img/Rectangle\ 10.png);
+  width: 390px;
+  height: 330px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .positText {
-  bottom: 18px;
-  left: 25px;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  left: 0px;
   position: absolute;
   color: #ffffff;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
 }
 .h4cartsec5 {
   font-weight: 600;
   font-size: 35px;
   line-height: 50px;
   color: #3ad4d8;
+  position: absolute;
+  top: 20px;
+  left: 4px;
 }
+/* Back text cart  */
+.flip-card {
+  background-color: transparent;
+  width: 390px;
+  height: 330px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+  color: #000;
+  padding: 80px 25px;
+  transform: rotateY(180deg);
+}
+
 /* Cart(3) */
 .divcart3sec5 {
   width: 399px;
-  background-image: url(./img/Rectangle\ 11.png);
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -468,6 +609,9 @@ li {
   font-size: 35px;
   line-height: 50px;
   color: #d6a7f9;
+  position: absolute;
+  top: 20px;
+  left: 4px;
 }
 /* Section(6) Design */
 .section6 {
@@ -535,10 +679,16 @@ li {
 .cart1sec8 {
   width: 315px;
   height: auto;
-  background-color: #f7f6f6;
-  box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.25);
+  background: #f7f6f6;
   padding: 16px;
   position: relative;
+  box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.25);
+}
+.cart1sec8:hover {
+  box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+  cursor: pointer;
+  transition: 0.3s ease;
+  background: #ffffff;
 }
 .border50 {
   padding: 12px;
@@ -563,21 +713,13 @@ li {
 .centersec8 > p {
   margin-top: 18px;
 }
-/* Cart(2) */
-.cart2sec8 {
-  width: 315px;
-  height: auto;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
-  padding: 16px;
-}
+
 /* Section(9) */
 .cart1sec9 {
   width: 315px;
   height: auto;
   background-color: #ffffff;
   box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
-  padding: 10px;
 }
 
 .titleh5sec9 {
@@ -640,6 +782,21 @@ li {
   box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
   background: #3ad4d8;
 }
+/* Section(11) */
+.splide__track {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+.splide__slide {
+  /* background: blue; */
+  width: 450px;
+  height: 350px;
+}
+.splide__slide > img {
+  width: 100%;
+  height: 100%;
+}
 /* Section(12) */
 .changediv {
   margin-top: 20px;
@@ -649,8 +806,12 @@ li {
 }
 /* ------------------- */
 /* Footer */
+.bgcontent {
+  padding: 0px;
+}
 .footer {
   width: 100%;
+  background: #671c7c;
 }
 .footercenter {
   display: flex;
@@ -670,10 +831,7 @@ li {
   font-weight: 700;
   line-height: 28px;
 }
-.footer {
-  width: 100%;
-  background: #671c7c;
-}
+
 .footerbootm {
   display: flex;
   width: 88%;
