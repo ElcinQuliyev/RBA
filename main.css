@@ -110,9 +110,10 @@ li {
   background: #543ee9;
   border-radius: 30px;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 .btn:hover {
-  transform: scale(1.2);
+  transform: scale(1.14);
 }
 
 .imgwidth {
@@ -304,14 +305,23 @@ li {
 
 .cart1 {
   width: 315px;
+  height: fit-content;
   background: #ffffff;
   position: relative;
   transition: 0.3s ease;
+}
+.hoverP {
+  display: none;
+  padding-top: 14px;
 }
 .cart1:hover {
   padding: 9px;
   box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
 }
+.cart1:hover .hoverP {
+  display: block;
+}
+
 .changebg {
   border: 0;
   background-color: #543ee9;
@@ -327,9 +337,17 @@ li {
 .bgchange > p {
   color: #543ee9;
 }
+.cartimg1 {
+  width: 100%;
+  height: 100%;
+}
 
 .cartimg1 > img {
   width: 100%;
+  height: 100%;
+}
+.cart1:hover .btnmany > p {
+  color: #3ad4d8;
 }
 .hourname {
   display: flex;
@@ -337,7 +355,7 @@ li {
   align-items: center;
   color: #fe5538;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 28px;
 }
 .ellipsis {
@@ -348,7 +366,7 @@ li {
   background: #3ad4d8;
 }
 .titleh5 {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 35px;
   font-weight: 600;
   word-break: break-all;
@@ -371,7 +389,7 @@ li {
 
 /* Sual verilecek..? */
 .btnmany > p {
-  color: #3ad4d8;
+  color: #671c7c;
   font-weight: 800;
   font-size: 15px;
   line-height: 75px;
@@ -394,15 +412,34 @@ li {
   height: fit-content;
   background-color: #ffffff;
   position: relative;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: 0.3s ease;
 }
+.hoverP {
+  display: none;
+  transition: 0.3s ease;
+}
+
 .cart2:hover {
   padding: 9px;
   box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
 }
+.cart2:hover .hoverP {
+  display: block;
+  opacity: 1;
+}
+.cart2:hover .btnmany > p {
+  color: #3ad4d8;
+}
+
+.cartimg2 {
+  width: 100%;
+  height: 100%;
+}
+
 .cartimg2 > img {
   width: 100%;
+  height: 100%;
 }
 .center {
   padding: 15px;
@@ -560,6 +597,7 @@ li {
   width: 390px;
   height: 330px;
   perspective: 1000px;
+  cursor: pointer;
 }
 
 .flip-card-inner {
@@ -640,10 +678,13 @@ li {
 /* Section(7) */
 .section7 {
   display: flex;
-  margin-top: 120px;
+  margin-top: 80px;
   justify-content: center;
   align-items: center;
   gap: 85px;
+}
+.left3 {
+  position: relative;
 }
 /* Section(8) */
 .section8 {
@@ -783,6 +824,14 @@ li {
   background: #3ad4d8;
 }
 /* Section(11) */
+/* bgcartsec11 */
+.bgcartsec11 {
+  width: 550px;
+  height: 450px;
+  background: #f7f6f6;
+  padding: 28px;
+}
+
 .splide__track {
   width: 100%;
   height: 100%;
