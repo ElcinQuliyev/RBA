@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Futurica:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style: none;
+}
+/* Back Conteiner IMG see not */
+
+.head-top {
+  background: #3ad4d8;
+}
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 16px;
+}
+
+.row {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fon {
+  padding-right: 10px;
+  border-right: 1px solid #000;
+}
+.fon2 {
+  padding-left: 10px;
+}
+.iconfont {
+  display: flex;
+  gap: 12px;
+}
+/* Container2 */
+
+.bgcontainer2 {
+  background: #f5f5f5;
+  width: 100%;
+}
+
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lid-flex {
+  display: flex;
+  justify-content: center;
+  gap: 37px;
+}
+li {
+  font-size: 14px;
+  font-weight: 700;
+}
+.icond-flex {
+  display: flex;
+  gap: 13px;
+}
+.bgborder {
+  padding: 12px 14px;
+  border-radius: 25px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+}
+/* Courses Section(1)  */
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.center {
+  margin: 20px auto;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+/* left design */
+.left {
+  width: 30%;
+  background: #ffffff;
+  box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.5);
+}
+.leftInput {
+  padding: 30px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  line-height: 28px;
+  gap: 8px;
+}
+/* Checbox design  */
+.material-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.material-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  position: relative;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-right: 8px;
+  border: 1px solid #fe5538;
+  transition: all 0.3s;
+}
+/* input Checked */
+.material-checkbox input[type="checkbox"]:checked ~ .checkmark {
+  background-color: #fe5538;
+  border-color: #fe5538;
+}
+/* input Checked ::after */
+.material-checkbox input[type="checkbox"]:checked ~ .checkmark:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 3px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* .material-checkbox input[type="checkbox"]:focus ~ .checkmark {
+  box-shadow: 0 0 0 2px #dfec5065;
+}
+
+.material-checkbox:hover input[type="checkbox"] ~ .checkmark {
+  border-color: #c3cf34;
+} */
+
+/* .material-checkbox input[type="checkbox"]:disabled ~ .checkmark {
+  opacity: 0.5;
+  cursor: not-allowed;
+} */
+
+/* .material-checkbox input[type="checkbox"]:disabled ~ .checkmark:hover {
+  border-color: #4d4d4d;
+} */
+
+#horns {
+  /* appearance: none; */
+  width: 12px;
+  height: 12px;
+  border: 1px solid red;
+}
+.hornslabel {
+  padding: 4px;
+}
+.divlabel {
+  /* padding: 5px; */
+  border-bottom: 1px solid #d5d5d5;
+}
+.right {
+  width: 70%;
+  background: blue;
+}
