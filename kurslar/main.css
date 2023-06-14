@@ -81,8 +81,14 @@ li {
   align-items: center;
   text-align: center;
 }
+.titleh1 {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 60px;
+  text-transform: capitalize;
+}
 .center {
-  margin: 20px auto;
+  margin: 50px auto;
   display: flex;
   width: 100%;
   gap: 20px;
@@ -90,6 +96,7 @@ li {
 /* left design */
 .left {
   width: 30%;
+  height: fit-content;
   background: #ffffff;
   box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.5);
 }
@@ -175,5 +182,199 @@ li {
 }
 .right {
   width: 70%;
-  background: blue;
+}
+/* ---- Rihgt Design ----- */
+/* Div Carts D-flex */
+.divcarts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.centerCart {
+}
+
+.cart1 {
+  width: 250px;
+  height: fit-content;
+  background: #ffffff;
+  position: relative;
+  transition: 0.5s ease;
+}
+.hoverP {
+  display: none;
+  padding-top: 14px;
+}
+.cart1:hover {
+  padding: 9px;
+  box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+  transform: scale(1.1);
+  z-index: 2;
+}
+.cart1:hover .hoverP {
+  display: block !important;
+}
+
+.iconstar {
+  display: none;
+}
+.cart1:hover .centerCart .iconstar {
+  display: block !important;
+}
+.changebg {
+  border: 0;
+  background-color: #543ee9;
+  color: #ffffff;
+  cursor: pointer;
+}
+.changebg:hover {
+  transform: scale(1.05);
+  background: #f7f6f6;
+  color: #000;
+  border: 1px solid #353535;
+}
+.bgchange > p {
+  color: #543ee9;
+}
+.cartimg1 {
+  width: 100%;
+  height: 100%;
+}
+
+.cartimg1 > img {
+  width: 100%;
+  height: 100%;
+}
+.cart1:hover .btnmany > p {
+  color: #3ad4d8;
+}
+.hourname {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #fe5538;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 28px;
+}
+.ellipsis {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  background: #3ad4d8;
+}
+.titleh5 {
+  font-size: 15px;
+  line-height: 35px;
+  font-weight: 600;
+  word-break: break-all;
+  text-overflow: clip;
+}
+.btnmany {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.btnsec3 {
+  width: 108px;
+  height: 40px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.btnsec3:hover {
+  transform: scale(1.05);
+}
+
+/* Sual verilecek..? */
+.btnmany > p {
+  color: #671c7c;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 75px;
+}
+.aydesign {
+  font-size: 12px;
+  padding: 2px;
+}
+/* Position Love  */
+.positlove {
+  width: 46px;
+  height: 44px;
+  top: 18px;
+  right: 12px;
+  position: absolute;
+}
+/* Cart(2) */
+.cart2 {
+  width: 250px;
+  height: fit-content;
+  background-color: #ffffff;
+  position: relative;
+  /* cursor: pointer; */
+  transition: 0.5s ease;
+}
+.hoverP {
+  display: none;
+  transition: 0.3s ease;
+}
+
+.cart2:hover {
+  padding: 9px;
+  box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+  transform: scale(1.1);
+  z-index: 2;
+}
+.cart2:hover .hoverP {
+  display: block;
+  opacity: 1;
+}
+.cart2:hover .btnmany > p {
+  color: #3ad4d8;
+}
+
+.cartimg2 {
+  width: 100%;
+  height: 100%;
+}
+
+.cartimg2 > img {
+  width: 100%;
+  height: 100%;
+}
+.center {
+  padding: 15px;
+}
+
+.divcenterAll {
+  display: block;
+  margin: 55px auto;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+  border: 0px;
+  cursor: pointer;
+}
+.divcenterAll:hover {
+  transform: scale(1.2);
+}
+/* Section(2) */
+.centerText {
+  width: 100%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  gap: 20px;
+  line-height: 26px;
+}
+.left1 {
+  width: 45%;
+}
+.right1 {
+  width: 45%;
 }
