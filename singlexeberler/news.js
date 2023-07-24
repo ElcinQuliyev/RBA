@@ -119,7 +119,7 @@ const ShowNews = async () => {
 
   <div class="cart2">
   <a href="../../RBA/xeberler/index.html?id=${exsten.id}" class="cartimg2">
-    <img src="${exsten.img}" alt="" />
+    <img src=".${exsten.img}" alt="" />
   </a>
   <div class="center">
     <h5 class="titleh5">${exsten.allExsam}</h5>
