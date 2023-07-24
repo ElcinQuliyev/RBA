@@ -1,5 +1,5 @@
 const divCenter = document.querySelector(".div-center");
-const url = "https://my-json-server.typicode.com/ElcinQuliyev/dbJson/db/";
+const url = "https://my-json-server.typicode.com/ElcinQuliyev/dbJson";
 
 const id = new URLSearchParams(window.location.search).get("id");
 
@@ -9,7 +9,7 @@ const cardData = async () => {
   const html = `
     <div class="section1">
         <div class="divImgCenter">
-            <img src="${data.img}" class="imgWidth" alt="${data.allExsam}" />
+            <img src=".${data.img}" class="imgWidth" alt="${data.allExsam}" />
         </div>
 
         <div class="centerDivText">
@@ -36,6 +36,7 @@ const divCour = document.querySelector(".div-cours");
 const divExsam = document.querySelector(".div-exsam");
 const ShowCourses = async () => {
   const { data } = await axios.get(`${url}/cartCourses`);
+  console.log(data);
   data.map((cours) => {
     divCour.innerHTML += `
     <div class="cart1">
@@ -110,12 +111,14 @@ ShowCourses();
 const ShowNews = async () => {
   const { data } = await axios.get(`${url}/cartsNews`);
 
+  console.log(data);
+
   data.map((exsten) => {
     console.log(exsten);
     showhtml = `
 
   <div class="cart2">
-  <a href="../xeberler/index.html?id=${exsten.id}" class="cartimg2">
+  <a href="../../RBA/xeberler/index.html?id=${exsten.id}" class="cartimg2">
     <img src="${exsten.img}" alt="" />
   </a>
   <div class="center">

@@ -40,7 +40,7 @@ const ShowCours = async () => {
         <a href="#"
           ><img src="./img/icons8-love-20.png" alt=""
         /></a>
-      </div>
+      </div>xxxxx
     </div>
   </div>
     `;
@@ -123,6 +123,7 @@ GraduatChild();
 // ----Section(12)----
 
 const divcart4 = document.querySelector(".divcarts4");
+console.log(window.location);
 
 const cartsNewses = async () => {
   const res = await axios.get(url + "/cartsNews");
@@ -132,7 +133,7 @@ const cartsNewses = async () => {
   data.forEach((exsten) => {
     divcart4.innerHTML += `   
     <div class="cart2">
-              <a href="../singlexeberler/index.html?id=${exsten.id}" class="cartimg2">
+              <a href="/RBA/singlexeberler/index.html?id=${exsten.id}" class="cartimg2">
                 <img src="${exsten.img}" alt="" />
               </a>
               <div class="center">
