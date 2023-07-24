@@ -1,10 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Futurica:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Futurica:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap"); */
+@font-face {
+  font-family: Mulish;
+  src: url(./assets/fonts/Mulish-Regular.ttf);
+}
+@font-face {
+  font-family: Didact;
+  src: url(./assets/fonts/DidactGothic-Regular.ttf);
+}
+@font-face {
+  font-family: Futurica;
+  src: url(./assets/fonts/Futurica.ttf);
+}
 * {
   margin: 0;
   padding: 0;
+  font-family: Mulish, sans-serif;
   box-sizing: border-box;
-  font-family: "Mulish", sans-serif;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+h1 {
+  font-family: Futurica !important;
+}
+h4 {
+  font-family: Didact !important ;
 }
 a {
   text-decoration: none;
@@ -13,6 +30,7 @@ a {
 li {
   list-style: none;
 }
+
 /* Back Conteiner IMG see not */
 
 .head-top {
@@ -107,6 +125,7 @@ li {
 .titleh1 {
   font-size: 46px;
   font-weight: 700;
+  width: 90%;
   font-style: normal;
   text-transform: capitalize;
   white-space: pre-line;
@@ -322,7 +341,6 @@ li {
   height: fit-content;
   background: #ffffff;
   position: relative;
-  transition: 0.3s ease;
 }
 .hoverP {
   display: none;
@@ -331,9 +349,23 @@ li {
 .cart1:hover {
   padding: 9px;
   box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+  transition: 0.5s ease;
 }
 .cart1:hover .hoverP {
   display: block;
+}
+
+.iconstar {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+}
+
+.cart1:hover .iconstar {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s all ease-in;
+  height: fit-content;
 }
 
 .changebg {
@@ -676,7 +708,7 @@ li {
 .titleh5sec6 {
   word-break: break-all;
   text-overflow: clip;
-  font-family: "Futurica";
+  /* font-family: "Futurica"; */
   font-weight: 400;
   font-size: 30px;
   line-height: 45px;
@@ -903,3 +935,49 @@ li {
   padding: 40px;
   color: #ffffff;
 }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+swiper-container {
+  width: 100%;
+  height: 570px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.div2 {
+  display: block;
+}
+.splide {
+  width: 10%;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+/* 
+@media screen and (max-width: 992px) {
+  .container {
+    width: 96px;
+    margin: 0 40px;
+  }
+} */
