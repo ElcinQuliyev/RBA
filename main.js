@@ -1,4 +1,6 @@
-const url = "http://localhost:3031";
+const url =
+  "https://my-json-server.typicode.com/ElcinQuliyev/dbJson/db/cartCourses";
+//  https://my-json-server.typicode.com/<your-username>/<your-repo>
 const divcart = document.querySelector(".divcarts");
 // ----Section(3)---
 const ShowCours = async () => {

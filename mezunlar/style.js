@@ -1,4 +1,5 @@
-const url = "http://localhost:3031";
+const url =
+  "https://my-json-server.typicode.com/ElcinQuliyev/dbJson/db/graduatesChild";
 const divcart3 = document.querySelector(".centers");
 const GraduatChild = async () => {
   const res = await axios.get(url + "/graduatesChild");

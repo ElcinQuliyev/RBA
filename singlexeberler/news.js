@@ -1,5 +1,5 @@
 const divCenter = document.querySelector(".div-center");
-const url = "http://localhost:3031";
+const url = "https://my-json-server.typicode.com/ElcinQuliyev/dbJson/db/";
 
 const id = new URLSearchParams(window.location.search).get("id");
 
