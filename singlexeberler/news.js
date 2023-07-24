@@ -41,7 +41,7 @@ const ShowCourses = async () => {
     divCour.innerHTML += `
     <div class="cart1">
     <div class="cartimg1">
-      <img src="${cours.img}" alt="" />
+      <img src=".${cours.img}" alt="" />
     </div>
     <div class="center">
       <div class="iconstar">
@@ -78,7 +78,7 @@ const ShowExsam = async () => {
     divExsam.innerHTML += `
     <div class="cart1">
               <div class="cartimg2">
-                <img src="${exsam.img}" alt="" />
+                <img src=".${exsam.img}" alt="" />
               </div>
               <div class="center">
                 <div class="hourname">
