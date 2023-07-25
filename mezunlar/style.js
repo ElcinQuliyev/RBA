@@ -1,5 +1,4 @@
-const url =
-  "https://my-json-server.typicode.com/ElcinQuliyev/dbJson/db/graduatesChild";
+const url = "https://my-json-server.typicode.com/ElcinQuliyev/dbJson";
 const divcart3 = document.querySelector(".centers");
 const GraduatChild = async () => {
   const res = await axios.get(url + "/graduatesChild");
@@ -31,3 +30,15 @@ const GraduatChild = async () => {
   });
 };
 GraduatChild();
+
+
+const hamburger = document.querySelector(".divHamburger");
+const showList = document.querySelector(".rightDiv");
+
+hamburger.addEventListener("click", ShowHamburger);
+
+function ShowHamburger() {
+  showList.classList.toggle("showMenu");
+  console.log("ss");
+}
+

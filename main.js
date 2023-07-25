@@ -40,7 +40,7 @@ const ShowCours = async () => {
         <a href="#"
           ><img src="./img/icons8-love-20.png" alt=""
         /></a>
-      </div>xxxxx
+      </div>
     </div>
   </div>
     `;
@@ -188,3 +188,14 @@ cartsNewses();
 //   const { data } = await axios.get(url + "/cartsNews");
 //   console.log(data);
 // }
+
+//----Hamburger -----
+const hamburger = document.querySelector(".divHamburger");
+const showList = document.querySelector(".rightDiv");
+
+hamburger.addEventListener("click", ShowHamburger);
+
+function ShowHamburger() {
+  showList.classList.toggle("showMenu");
+  console.log("ss");
+}

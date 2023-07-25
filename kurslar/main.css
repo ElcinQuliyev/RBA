@@ -58,7 +58,7 @@ li {
 .lid-flex {
   display: flex;
   justify-content: center;
-  gap: 37px;
+  gap: 28px;
 }
 li {
   font-size: 14px;
@@ -204,9 +204,6 @@ li {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-}
-
-.centerCart {
 }
 
 .cart1 {
@@ -427,4 +424,84 @@ li {
   justify-content: space-between;
   padding: 40px;
   color: #ffffff;
+}
+.divHamburger {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 96%;
+    padding: 0 40px;
+  }
+
+  .rightDiv {
+    position: fixed;
+    width: 45%;
+    background-color: #000;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    bottom: 0;
+    background: #3ad4d8;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  .lid-flex {
+    gap: 20px;
+    position: fixed;
+    left: -5%;
+    top: 0px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .lid-flex li {
+    font-size: 18px;
+  }
+  .lid-flex li :hover {
+    transition: 0.6s ease;
+    opacity: 0.5;
+  }
+  .icond-flex {
+    display: none;
+  }
+  .divHamburger {
+    display: block;
+    background-color: #3ad4d8;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 96%;
+    padding: 0 40px;
+  }
+
+  .center {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .footercenter {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 22px;
+  }
+  .divlogofooter {
+    flex-direction: column;
+    gap: 22px;
+  }
+}
+.showMenu {
+  transform: translateX(0);
 }
