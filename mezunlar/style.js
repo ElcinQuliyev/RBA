@@ -8,7 +8,7 @@ const GraduatChild = async () => {
     divcart3.innerHTML += `
       <div class="cart1">
       <div class="cartimg2">
-        <img src="${exsten.img}" class="widImg" alt="" />
+        <img src=".${exsten.img}" class="widImg" alt="" />
       </div>
       <div class="center">
         <div class="hourname">
@@ -31,7 +31,6 @@ const GraduatChild = async () => {
 };
 GraduatChild();
 
-
 const hamburger = document.querySelector(".divHamburger");
 const showList = document.querySelector(".rightDiv");
 
@@ -41,4 +40,3 @@ function ShowHamburger() {
   showList.classList.toggle("showMenu");
   console.log("ss");
 }
-
