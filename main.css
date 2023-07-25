@@ -986,6 +986,29 @@ swiper-slide img {
   height: 100%;
 }
 
+@media screen and (max-width: 1295px) {
+  .container {
+    max-width: 98%;
+    padding: 0 40px;
+  }
+  .imgdiv {
+    top: 115px;
+    left: 200px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .imgdiv {
+    top: 110px;
+    left: 170px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .imgdiv {
+    top: 120px;
+    left: 130px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   /*--- Header --- */
   .container {
@@ -1045,8 +1068,8 @@ swiper-slide img {
   }
   /* ----Section(1) ---- */
   .imgdiv {
-    top: 125px;
-    left: 110px;
+    top: 115px;
+    left: 95px;
   }
   .titleh1 {
     font-size: 32px;
